@@ -15,11 +15,11 @@ int main()
 void pattern(int x)
 {
   int i,j;  
-  for(i=1;i<=x;i++)
+  for(i=1; i<=x; i++)
   {
-    for(j=1;j<=i;j++)
+    for(j=1; j<=i; j++)
     {
-    printf("%d",i);
+      printf("%d",i);
     }
     printf("\n"); 
   }  
