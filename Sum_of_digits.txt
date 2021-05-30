@@ -1,3 +1,10 @@
+/* Description of the code
+This code provides the sum of digits of a given number.
+eg:if the entered number is 234, the the sum of digits will be:
+sum=2+3+4=9
+so the desired output will be 9.
+*/
+
 #include<stdio.h>
 int main()
 {
