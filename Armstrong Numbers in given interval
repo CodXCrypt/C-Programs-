@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int start,end,i,tmp,d,sumOfCubes=0,num;
+    printf("Enter the  interval : ");
+    scanf("%d ",&start);
+    scanf("%d",&end);
+    for(num = start;num<=end;num++)
+    {
+        sumOfCubes=0;
+        tmp = num;
+        while(tmp!=0)
+        {
+            d = tmp%10;
+            sumOfCubes = sumOfCubes + (d*d*d);
+            tmp = tmp/10;
+        }
+        if(num == sumOfCubes)
+            printf("%d is a Armstrong Number\n",num);
+        else
+            printf("%d is not a Armstrong Number\n",num);
+        
+    
+    }
+    return 0;
+}
