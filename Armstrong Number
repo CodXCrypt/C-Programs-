@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int num,i,tmp,d,sumOfCubes=0;
+    printf("Enter the number : ");
+    scanf("%d",&num);
+    tmp = num;
+    while(num!=0)
+    {
+        d = num%10;
+        sumOfCubes = sumOfCubes + (d*d*d);
+        num = num/10;
+    }
+    if(tmp == sumOfCubes)
+        printf("It is a Armstrong Number");
+    else
+        printf("It is not a Armstrong Number");
+   
+    return 0;
+}
